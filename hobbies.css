@@ -1,0 +1,80 @@
+@import "styles.css";
+/* HOBBIES PAGE **********************************************************************************/
+.sectionWriting {
+  height: 750px;
+  width: auto;
+  background-image: url(/images/writing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* FIX ME ********************************************************************************************************************************************************************************************************************************************************************************** */
+h2 {
+  color: white;
+}
+p {
+  color: white;
+}
+
+/* Code for grid. Display must be set to grid with a width of 100% to fit inside the container. The grid
+template colums are set to repeat with two columns. The minmax size is a min of 100px and as large as it
+needs to be by being auto. */
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* The grids vary in this customization with the first set to flex to justify and align items to the center.
+width is 100% to fit in entire grid section, column is determined by 1/4 indicating the filling of the
+entire top section of the grid. Row is 1/3 to fill the first three rows. Border is for development 
+purposes. */
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  /* border: 1px solid red;  */
+}
+.two {
+  grid-column: 1;
+  grid-row: 3 / 5;
+  /* border: 1px solid red; */
+}
+
+.three {
+  grid-column: 1/4;
+  grid-row: 3 / 5;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+.musicSection .three {
+  grid-column: 2/4;
+}
+
+/* margin top is set to -15px to overlap the elements */
+.socialMediaSection {
+  padding-top: 25px;
+  display: flex;
+  background-color: #363537;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.274);
+}
+
+.musicSection {
+  padding-top: 15px;
+  padding-bottom: 250px;
+  background-image: url(/images/music.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.freelanceSection {
+  padding-top: 15px;
+}

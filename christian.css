@@ -1,0 +1,25 @@
+@import "styles.css";
+
+/* CHRISTIAN PAGE **********************************************************************************/
+.theologySection {
+  background-image: url(/images/Bible.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 750px;
+}
+
+.ministrySection {
+  display: flex;
+  background-color: #363537;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.274);
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
