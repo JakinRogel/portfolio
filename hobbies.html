@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobbies</title>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BootStrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="/CSS/hobbies.css" />
+    <script src="/JS/displayText.js"></script>
+    <script src="/JS/contact.js"></script>
+    <script src="/JS/navbar.js"></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="sectionWriting">
+      <!-- SECTION ************************************************* -->
+      <!-- div container for img -->
+      <div class="container">
+        <div class="grid">
+          <div class="one"></div>
+          <!-- canvas for circle graphic with ID myCanvas for JS, width and height to contain, float left for position -->
+          <div class="two">
+          </div>
+          <div class="three">
+            <div class="textContainer" style="margin-top: 250px; display: flex; flex-direction:column; align-items: center;">
+            <!-- heading for writing section -->
+            <h2>Writing</h2>
+            <!-- paragraph for writing section -->
+            <p>Writing has always been a passion of mine or really story telling. It was when I was 17 years old in my AP Literature class that I really started to become dedicated to writing. I have been writing short stories and book ideas ever since! My most recent book has been in the works for the past 3 years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socialMediaSection">
+      <!-- SECTION ****************************************************************************** -->
+      <!-- div container for img -->
+      <div class="container">
+        <div class="grid">
+          <div class="one">
+            <!-- social media youtube iframe embed -->
+            <iframe style="box-shadow: 0px 0px 10px black; padding: 25px; border-radius: 10px;"
+              width="100%"
+              height="500px"
+              src="https://www.youtube.com/embed/BTpcJKfiG1s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- div to contain writing section -->
+          <div class="two"></div>
+          <div class="three">
+            <div class="textContainer">
+            <!-- heading for writing section -->
+            <h2 style="color: white;">Social Media</h2>
+            <!-- paragraph for writing section -->
+            <p>I have been posting videos to Youtube, Instagram, Facebook, and really any social media platform I can find. I love content creation! One of the biggest hurdles I have is criticising my work for being less than what I expect it to be, but that's all apart of the journey. We all start somewhere!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="musicSection">
+      <!-- SECTION ****************************************************************************** -->
+      <!-- div container for img -->
+      <div class="container">
+        <div class="grid">
+          <div class="one">
+            <br />
+            <!-- audio overhead -->
+            <audio controls style="width: 100%; z-index: 1; box-shadow: 0px 0px 10px black; border-radius: 100px;">
+              <!-- get audio source -->
+              <source src="/Media/prince of Egypt.mp3" />
+              Your browser does not support this audio tag.
+            </audio>
+            <!-- div to contain writing section -->
+          </div>
+          <div class="three" style="width: 100%;">
+            <div class="textContainer">
+            <!-- heading for writing section -->
+            <h2>Music</h2>
+            <!-- paragraph for writing section -->
+            <p>Music has been a huge part of my life. I played piano as a kid and have recently taken up guitar. Most of all I love to listen to music. Above I attached one of my favorite songs that I used to listen to as a kid. Check it out!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="freelanceSection">
+      <!-- SECTION ****************************************************************************** -->
+      <!-- div container for img -->
+      <div class="container">
+        <div class="grid">
+          <div class="one">
+            <!-- video overhead -->
+            <video style="width: 100%" controls>
+              <source src="/Media/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <!-- div to contain writing section -->
+          </div>
+          <div class="two"></div>
+          <div class="three">
+            <div class="textContainer">
+            <!-- heading for writing section -->
+            <h2>Freelance</h2>
+            <!-- paragraph for writing section -->
+            <p>For the last year I have been freelance developing websites. It is a lot of work and is what inspired me to get a degree in Software Development. </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contactDisplay" class="container">
+      <button id="contactBtn" style="width: 100%;">Contact Us</button>
+      <div id="contact" style="display: none;"></div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
