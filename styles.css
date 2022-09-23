@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* this determines the base styling for the body of the website. I chose my theme background
+and Franklin Gothic Medium as the font with backups of Arial Narrow, Arial, and sans-serif if 
+none of the former are supported by the browser. */
+body {
+  font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
+  margin: 0%;
+}
+/* This section tag is establishing the base for the styles I desire for the sections
+in my website. I am setting their native position to relative, with auto height and width
+so the section can move freely. The display is flex so I can align the items and justify the
+content to the center. I am adding 75px padding as well with a border of 1px to help me during
+my development process */
+section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* h1 refers to all the h1 headers. Height auto and width auto to support
+text size. Text align center. Border for development purposes. */
+h1 {
+  color: black;
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.514);
+  /* border: 1px solid white; */
+}
+/* Change paragraphs to white text */
+p {
+  color: black;
+}
+/* change Lists to white text */
+li {
+  color: black;
+}
+
+button {
+  background-color: rgb(219, 157, 43);
+  border-radius: 100px;
+  height: 50px;
+  box-shadow: 0px 0px 10px black;
+    font-weight: bold;
+}
+button:hover {
+  box-shadow: 0px 0px 10px white;
+  font-weight:lighter;
+}
+/* a refers to all links on site. Base color is white, I removed the underline, and added
+slight padding for aesthetic purposes.  */
+a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* a:hover refers to links that have the users cursor hovering over the element. The text 
+decoration returns and the font size increases with a linear transition of 2 seconds. The font 
+is also italicized and changed to Courier New along with the color. */
+a:hover {
+  text-shadow: 0px 0px 10px white;
+}
+/* .animate refers to a class I created for the header I am using for the navbar. I named the
+referenced animation header with a duration of 2 seconds and an infinite loop */
+.animate {
+  animation-name: header;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+/* keyframes refers to the creation of animation and specifically the key frames in which a new 
+animation takes place. The first animation begins at 0% through the 2 second duration. This changes
+the color and then changes it again half way through before changing it back at the end. This creates
+a smooth blinking animation. */
+@keyframes header {
+  0% {
+    text-shadow: 0px 0px 0px white;
+  }
+  50% {
+    text-shadow: 0px 0px 2px white;
+  }
+  100% {
+    text-shadow: 0px 0px 0px white;
+  }
+}
+/* The container class is used for the div blocks I use as containers. These keep the 
+formatting of the website uniform by consigning all the elements to reside within a 
+750px width along with center alignment and justification. Flex direction is set to 
+column to imitate the common inline style of HTML. Border is added for developer
+purposes. */
+.container {
+  max-width: 1000px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-image: linear-gradient(75deg, #af9696, rgb(255, 255, 255)); */
+  /* border-radius: 30px; */
+  /* box-shadow: 0px 0px 50px black; */
+}
+
+.textContainer {
+  background-color: #363537;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+  margin: 25px;
+  border: 5px solid black;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.74),
+    inset 0px 0px 20px rgba(255, 255, 255, 0.274);
+}
+
+.textContainer p {
+  color: white;
+}
+
+.textContainer h1 h2 h3 {
+  color: white;
+}
+/* navbarContainer sets position to fixed, allowing the div to travel down the page stuck to the top. 
+It is justified with space-between so that the header and links are separated on either side of the div.
+The width is 750px to coincide with the rest of the theme with a different color for aesthetic purposes
+and a z-index of 100 to ensure it is always on top. Margin-top is set to -20px so it remains at the top
+with padding of 100% on either side so the background color extends across the page */
+.navbarContainer {
+  position: fixed;
+  width: 100%;
+  background-color: #363537;
+  z-index: 100;
+  box-shadow: inset 0px 0px 5px black, 0px 0px 10px black;
+}
+
+/* Title for page styling */
+.navbarContainer h1 {
+  font-size: 50px;
+  margin: 0px;
+  color: white;
+}
+
+.navbarContainer h1 {
+  font-size: 30px;
+}
+
+.form {
+  width: 75%;
+}

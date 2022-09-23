@@ -1,0 +1,17 @@
+@import "styles.css";
+@import "footer.css";
+
+/* CONTACT PAGE **********************************************************************************/
+.sectionContact {
+  height: 750px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+#contactDisplay {
+  min-height: 100px;
+}

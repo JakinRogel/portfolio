@@ -1,0 +1,16 @@
+@import "styles.css";
+
+/* PHOTOS PAGE **********************************************************************************/
+
+.carousel-inner {
+background-color: #363537;
+border-radius: 100px;
+box-shadow: inset 0px 0px 10px white, 0px 5px 10px black;
+}
+
+.img {
+height: 60vh; object-fit:contain;
+padding-right: 100px;
+padding-left: 100px;
+}
+
